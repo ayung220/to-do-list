@@ -1,0 +1,15 @@
+diff --git a/node_modules/react-native/index.js b/node_modules/react-native/index.js
+index 7149c64..c9ea252 100644
+--- a/node_modules/react-native/index.js
++++ b/node_modules/react-native/index.js
+@@ -560,9 +560,7 @@ if (__DEV__) {
+     get() {
+       invariant(
+         false,
+-        'TimePickerAndroid has been removed from React Native. ' +
+-          "It can now be installed and imported from '@react-native-community/datetimepicker' instead of 'react-native'. " +
+-          'See https://github.com/react-native-datetimepicker/datetimepicker',
++        return require('@react-native-picker/picker') 
+       );
+     },
+   });
